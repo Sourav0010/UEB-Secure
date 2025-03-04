@@ -155,7 +155,9 @@ main {
 .cube,
 .cube2,
 .cube4,
-.cube10 {
+.cube10,
+.cube12,
+.cube13 {
    width: 1.5rem;
    height: 1.5rem;
    background-color: #c9f31d;
@@ -408,19 +410,277 @@ main {
    position: relative;
 }
 
-.section2 {
-   background-color: black;
-   color: white;
-   padding: 5rem 0rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-}
-
 .cube10 {
    position: absolute;
    bottom: 0;
    left: 10%;
+   z-index: 10;
    transform: translateY(50%);
+}
+
+.section2 {
+   background-color: black;
+   color: white;
+   padding: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+
+.part1 {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   padding: 5rem;
+}
+
+.part1 h2 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 2.5rem;
+   color: #c9f31d;
+   background-color: black;
+   padding: 0.1rem 0rem;
+   text-align: left;
+}
+
+.carosel {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   margin-top: 3rem;
+}
+.card {
+   padding: 3rem 0.5rem;
+   border: 1px solid rgb(68, 68, 68);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #1a1a1a;
+   position: relative;
+   overflow: hidden;
+}
+
+.card h2 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 1.1rem;
+   color: #c9f31d;
+   background-color: #1a1a1a;
+   padding: 0.1rem 1rem;
+}
+
+.card p {
+   font-family: 'FiaCodeRegular', sans-serif;
+   font-size: 0.7rem;
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.img {
+   width: 12rem;
+   height: 12rem;
+}
+
+.img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.card .glow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #c9f31d;
+   width: 100%;
+   height: 50%;
+   border-radius: 100%;
+   filter: blur(70px);
+   transform: translateY(-100%);
+}
+
+.glow12,
+.glow11 {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   background-color: #fff;
+   width: 30%;
+   height: 50%;
+   border-radius: 100%;
+   filter: blur(120px);
+}
+
+.glow11 {
+   top: 50%;
+   right: 0;
+   transform: translate(110%, -50%);
+}
+
+.glow12 {
+   top: 50%;
+   left: 0;
+   transform: translate(-110%, -50%);
+}
+
+.part2 {
+   display: flex;
+
+   flex-direction: column;
+   gap: 2rem;
+   padding: 5rem;
+   width: 100%;
+}
+
+.part2 h2 {
+   font-family: 'FreeSansRegular', sans-serif;
+   font-size: 2.5rem;
+   color: #fff;
+   font-style: italic;
+   font-weight: 100;
+   padding: 0.1rem 1rem;
+}
+
+.part2 h2 span {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 2.5rem;
+   color: #c9f31d;
+   font-style: normal;
+   font-weight: 100;
+   padding: 0.1rem 1rem;
+}
+
+.container34 {
+   background-color: white;
+   width: 100%;
+   padding-bottom: 2rem;
+   display: flex;
+   position: relative;
+}
+
+.image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.image {
+   width: 20rem;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transform: translate(-10%, 10%);
+}
+
+.part2-text {
+   width: 100%;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   align-items: flex-end;
+}
+
+.text24 {
+   border: 0.5px solid rgba(53, 53, 53, 0.645);
+   position: relative;
+   padding: 2rem;
+}
+
+.text24 h1 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 3.5rem;
+   color: black;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate(-50%, -50%);
+}
+
+.text24 span {
+   font-family: 'FiaCodeBold', sans-serif;
+   font-weight: 100;
+   padding: 0.1rem 1rem;
+}
+
+.text1 {
+   width: 90%;
+   padding-top: 4rem;
+}
+
+.text2 {
+   width: 80%;
+}
+
+.text3 {
+   width: 75%;
+   padding: 1rem;
+}
+
+.text3 ul {
+   transform: translateX(5%);
+}
+
+.text4 {
+   width: 70%;
+}
+
+.cube12 {
+   bottom: 0;
+   right: 0;
+   transform: translate(50%, 50%);
+}
+
+.cube13 {
+   top: 0;
+   left: 0;
+   transform: translate(-50%, -50%);
+}
+
+.part3 {
+   font-family: 'FiaCodeRegular', sans-serif;
+   font-size: 1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 80%;
+}
+
+.part3 ul li span {
+   font-family: 'FiaCodeBold', sans-serif;
+   font-weight: 100;
+}
+
+.part3 h2 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 2.5rem;
+   color: #c9f31d;
+   padding: 0.1rem 1rem;
+}
+
+.texture3 {
+   width: 100%;
+   height: 10rem;
+   background-color: #fff;
+   margin: 2rem 0;
+}
+
+.part2-image {
+   width: 15rem;
+   position: absolute;
+   bottom: 0;
+   right: 10%;
+   transform: translateY(50%);
+}
+.part2-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
 }
