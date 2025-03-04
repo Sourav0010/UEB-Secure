@@ -427,6 +427,7 @@ main {
    align-items: center;
    flex-direction: column;
    position: relative;
+   overflow-x: hidden;
 }
 
 .part1 {
