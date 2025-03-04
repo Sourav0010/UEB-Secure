@@ -1,0 +1,304 @@
+@font-face {
+   font-family: 'FiaCodeBold';
+   src: url('./assets//fonts/FiraCode-Bold.ttf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FiaCodeRegular';
+   src: url('./assets//fonts/FiraCode-Regular.ttf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FiaCodeLight';
+   src: url('./assets//fonts/FiraCode-Light.ttf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FiaCodeMedium';
+   src: url('./assets//fonts/FiraCode-Medium.ttf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FiaCodeSemiBold';
+   src: url('./assets//fonts/FiraCode-SemiBold.ttf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FreeSans';
+   src: url('./assets/fonts/FreeSans.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FreeSansBold';
+   src: url('./assets/fonts/FreeSansBold.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FreeSansBoldOblique';
+   src: url('./assets/fonts/FreeSansBoldOblique.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'FreeSansOblique';
+   src: url('./assets/fonts/FreeSansOblique.otf') format('opentype');
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: black;
+   overflow-x: hidden;
+}
+
+.logo {
+   width: 7rem;
+   height: 7rem;
+}
+
+nav {
+   padding: 0rem 2rem;
+}
+.logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+main {
+   font-family: 'FreeSansBold', sans-serif;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: 5rem 0rem;
+}
+
+.main-text {
+   font-size: 2.1rem;
+   line-height: 1.2;
+   margin-left: 2rem;
+}
+.main-image {
+   width: 50%;
+   height: 30rem;
+}
+.main-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   padding-left: 10rem;
+}
+
+.thin {
+   font-family: 'FreeSans', sans-serif;
+   font-weight: 100;
+}
+
+.color {
+   color: #f1c40f;
+}
+
+main {
+   position: relative;
+   height: auto;
+}
+
+.glow1,
+.glow2 {
+   width: 20rem;
+   height: 50rem;
+   background: radial-gradient(circle, #4367017a 40%, rgba(0, 0, 0, 0) 60%);
+   position: absolute;
+   transform: translateY(-50%);
+   border-radius: 100%;
+   filter: blur(70px);
+}
+
+.glow1 {
+   top: 50%;
+   left: -15%;
+}
+
+.glow2 {
+   top: 50%;
+   right: -15%;
+}
+
+.main-button {
+   cursor: pointer;
+   width: 15rem;
+   height: 7rem;
+}
+
+.main-button img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.section1 {
+   background-color: white;
+   color: black;
+   position: relative;
+   padding: 0 0 5rem 0rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cube,
+.cube2,
+.cube4 {
+   width: 1.5rem;
+   height: 1.5rem;
+   background-color: #c9f31d;
+   position: absolute;
+}
+
+.cube {
+   top: 0;
+   left: 65%;
+   transform: translateY(-50%);
+}
+
+.container1 {
+   position: relative;
+}
+
+.cube2 {
+   top: 3%;
+   left: 0;
+   transform: translateX(-50%);
+}
+
+.container1 {
+   border-left: 0.4px solid rgba(53, 53, 53, 0.855);
+   width: 85%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 4rem;
+}
+
+.container2,
+.container3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 3rem;
+   width: 80%;
+   padding: 2rem;
+}
+
+.container3 {
+   padding: 0;
+}
+
+.container2 {
+   position: relative;
+}
+.container2 h2,
+.container3 h2 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-size: 2.5rem;
+   color: #c9f31d;
+   background-color: black;
+   padding: 0.1rem 1rem;
+}
+
+.container2 p,
+.container4 p {
+   font-family: 'FiaCodeRegular', sans-serif;
+   font-size: 1.2rem;
+}
+
+.container2 p {
+   margin-top: 3rem;
+}
+
+.cube3 {
+   background-color: white;
+   border-left: 0.4px solid rgba(53, 53, 53, 0.855);
+   border-bottom: 0.4px solid rgba(53, 53, 53, 0.855);
+   width: 10rem;
+   height: 10rem;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.cube-img1 {
+   width: 12rem;
+   height: 12rem;
+   position: absolute;
+   bottom: 0;
+   right: -10%;
+   transform: translateY(100%);
+}
+
+.cube-img1 img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.container4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.container4 h3 {
+   font-family: 'FreeSansBold', sans-serif;
+   font-weight: bolder;
+   font-size: 2rem;
+   font-stretch: condensed;
+   font-style: italic;
+}
+
+.container3 {
+   align-self: flex-start;
+   width: 100%;
+   margin-top: 10rem;
+}
+
+.container4 {
+   align-self: self-end;
+   border-top: 1px solid rgba(53, 53, 53, 0.855);
+   border-right: 1px solid rgba(53, 53, 53, 0.855);
+   border-bottom: 1px solid rgba(53, 53, 53, 0.855);
+   padding-left: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-top: 5rem;
+}
+
+.left p,
+.right p {
+   font-family: 'FiaCodeRegular', sans-serif;
+   font-size: 1.2rem;
+   margin-top: 1rem;
+   width: 80%;
+}
+
+.left,
+.right {
+   justify-self: flex-end;
+}
+
+.cube4 {
+   top: 0;
+   right: 0;
+   transform: translate(50%, -50%);
+}
