@@ -966,6 +966,10 @@ main {
       padding-left: 0;
    }
 
+   .main-text h2 {
+      padding-left: 2rem;
+   }
+
    .social {
       gap: 0rem;
       justify-content: center;
