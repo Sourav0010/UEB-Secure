@@ -74,7 +74,7 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden;
+   overflow-x: hidden;
    padding: 5rem 0rem;
 }
 
@@ -111,8 +111,8 @@ main {
 .glow1,
 .glow2 {
    width: 20rem;
-   height: 50rem;
-   background: radial-gradient(circle, #4367017a 40%, rgba(0, 0, 0, 0) 60%);
+   height: 50%;
+   background: #4367017a;
    position: absolute;
    transform: translateY(-50%);
    border-radius: 100%;
@@ -855,4 +855,63 @@ main {
    color: white;
    margin-top: 2rem;
    text-align: center;
+}
+
+/* Media Queries for tablets */
+@media only screen and (max-width: 1024px) {
+}
+
+/* Media Queries for mobile devices */
+@media only screen and (max-width: 640px) {
+   nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   main {
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      overflow-y: visible;
+   }
+
+   .main-text {
+      margin-left: 0;
+      font-size: medium;
+   }
+   .main-button {
+      width: 10rem;
+      height: 5rem;
+      margin: auto;
+   }
+   .main-image {
+      width: 100%;
+      height: 20rem;
+      transform: translateX(5%);
+   }
+   .main-image img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+      padding-left: 0;
+   }
+
+   .glow2,
+   .glow1 {
+      top: 0;
+      right: 0;
+      transform: translate(0, 0);
+   }
+
+   .glow2 {
+      top: 50%;
+      right: 0;
+      transform: translate(70%, -50%);
+   }
+
+   .glow1{
+      top: 50%;
+      left: 0;
+      transform: translate(-70%, -50%);
+   }
 }
