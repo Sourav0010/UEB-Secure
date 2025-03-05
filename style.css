@@ -100,7 +100,7 @@ main {
 }
 
 .color {
-   color: #f1c40f;
+   color: #deff2a;
 }
 
 main {
@@ -764,6 +764,10 @@ main {
    padding: 5rem 0;
    display: flex;
    flex-direction: column;
+}
+
+.section4 a {
+   margin: auto;
 }
 .glow20 {
    height: 100%;
