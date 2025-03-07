@@ -477,9 +477,9 @@ main {
 .carosel {
    display: flex;
    justify-content: center;
-   align-items: center;
    gap: 2rem;
    margin-top: 3rem;
+   align-items: stretch;
 }
 .card {
    padding: 3rem 0.5rem;
@@ -1103,6 +1103,7 @@ main {
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
+      align-items: stretch;
    }
 
    .part1 h2 {
@@ -1117,6 +1118,7 @@ main {
 
    .card h2 {
       font-size: small;
+      margin: 0;
    }
 
    .card p {
